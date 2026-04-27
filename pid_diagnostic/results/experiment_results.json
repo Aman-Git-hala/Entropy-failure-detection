@@ -1,0 +1,222 @@
+{
+  "AI4I": {
+    "synergy_ratio": 2.3866140183270512,
+    "mi_per_group": {
+      "Thermal": 0.026604198961842455,
+      "Mechanical": 0.24471473382015974,
+      "Wear": 0.08407044118366414
+    },
+    "pairwise_pids": [
+      {
+        "pair": "Thermal\u00d7Mechanical",
+        "redundancy": 0.02660419896184249,
+        "unique_i": 0.0,
+        "unique_j": 0.21811053485831725,
+        "synergy": 0.3525945832797609
+      },
+      {
+        "pair": "Thermal\u00d7Wear",
+        "redundancy": 0.02660419896184249,
+        "unique_i": 0.0,
+        "unique_j": 0.057466242221821645,
+        "synergy": 0.2063791925948092
+      },
+      {
+        "pair": "Mechanical\u00d7Wear",
+        "redundancy": 0.08407044118366411,
+        "unique_i": 0.16064429263649563,
+        "unique_j": 2.7755575615628914e-17,
+        "synergy": 0.2892034859963639
+      }
+    ],
+    "full_auc_mean": 0.869386851238577,
+    "full_auc_std": 0.03545277443224202,
+    "full_mcc_mean": 0.59500887435013,
+    "ablation_auc_mean": 0.8535404135085025,
+    "ablation_delta_auc": 0.015846437730074436,
+    "ablation_p_value": 0.03290185548917298,
+    "baselines": {
+      "Naive Bayes": {
+        "auc_mean": 0.849160000873588,
+        "auc_std": 0.00987895260438547
+      },
+      "Logistic Reg.": {
+        "auc_mean": 0.7103046269960732,
+        "auc_std": 0.009748474562523866
+      },
+      "Random Forest": {
+        "auc_mean": 0.9570086668234614,
+        "auc_std": 0.002722376283331534
+      },
+      "XGBoost (GB)": {
+        "auc_mean": 0.9703502099864629,
+        "auc_std": 0.003424838186237317
+      }
+    }
+  },
+  "C-MAPSS": {
+    "synergy_ratio": 0.005650854991132342,
+    "mi_per_group": {
+      "Temperature": 0.5191337252785814,
+      "Pressure": 0.5110616586267227,
+      "Speed": 0.48438099312620897
+    },
+    "pairwise_pids": [
+      {
+        "pair": "Temperature\u00d7Pressure",
+        "redundancy": 0.5110616586266956,
+        "unique_i": 0.008072066651885756,
+        "unique_j": 2.708944180085382e-14,
+        "synergy": 0.00232835339212778
+      },
+      {
+        "pair": "Temperature\u00d7Speed",
+        "redundancy": 0.48438099312619665,
+        "unique_i": 0.034752732152384724,
+        "unique_j": 1.2323475573339238e-14,
+        "synergy": 0.0012784206570874979
+      },
+      {
+        "pair": "Pressure\u00d7Speed",
+        "redundancy": 0.48438099312619665,
+        "unique_i": 0.026680665500526057,
+        "unique_j": 1.2323475573339238e-14,
+        "synergy": 0.004951877430384388
+      }
+    ],
+    "full_auc_mean": 0.9992174102606514,
+    "full_auc_std": 0.0010304722733733345,
+    "full_mcc_mean": 0.9633853578993433,
+    "ablation_auc_mean": 0.9992091180599468,
+    "ablation_delta_auc": 8.292200704529407e-06,
+    "ablation_p_value": 0.35117063221120365,
+    "baselines": {
+      "Naive Bayes": {
+        "auc_mean": 0.9969022730303034,
+        "auc_std": 0.0008062458486324723
+      },
+      "Logistic Reg.": {
+        "auc_mean": 0.9997549911663028,
+        "auc_std": 6.682200389952113e-05
+      },
+      "Random Forest": {
+        "auc_mean": 0.9994042512204155,
+        "auc_std": 0.00029598623125599453
+      },
+      "XGBoost (GB)": {
+        "auc_mean": 0.9995877190907738,
+        "auc_std": 0.00013948131513287195
+      }
+    }
+  },
+  "Synthetic (Cascading)": {
+    "synergy_ratio": 0.16558565004864292,
+    "mi_per_group": {
+      "Broker": 0.5009101884420062,
+      "Consumer": 0.5125082851232902,
+      "Network": 0.5490376101362711
+    },
+    "pairwise_pids": [
+      {
+        "pair": "Broker\u00d7Consumer",
+        "redundancy": 0.5009101884420041,
+        "unique_i": 2.1094237467877974e-15,
+        "unique_j": 0.011598096681286085,
+        "synergy": 0.1109263187727143
+      },
+      {
+        "pair": "Broker\u00d7Network",
+        "redundancy": 0.5009101884420041,
+        "unique_i": 2.1094237467877974e-15,
+        "unique_j": 0.04812742169426698,
+        "synergy": 0.0743969937597333
+      },
+      {
+        "pair": "Consumer\u00d7Network",
+        "redundancy": 0.5125082851232887,
+        "unique_i": 1.4432899320127035e-15,
+        "unique_j": 0.03652932501298234,
+        "synergy": 0.0733969937597333
+      }
+    ],
+    "full_auc_mean": 0.9112321568627451,
+    "full_auc_std": 0.00728532530384033,
+    "full_mcc_mean": 0.5529646902630876,
+    "ablation_auc_mean": 0.9122184313725491,
+    "ablation_delta_auc": -0.0009862745098040415,
+    "ablation_p_value": 0.39762836519768446,
+    "baselines": {
+      "Naive Bayes": {
+        "auc_mean": 0.910310980392157,
+        "auc_std": 0.006762511107442069
+      },
+      "Logistic Reg.": {
+        "auc_mean": 0.920554117647059,
+        "auc_std": 0.0059310010060265265
+      },
+      "Random Forest": {
+        "auc_mean": 0.9116364705882353,
+        "auc_std": 0.007962802854298501
+      },
+      "XGBoost (GB)": {
+        "auc_mean": 0.9134345098039216,
+        "auc_std": 0.005753516498225089
+      }
+    }
+  },
+  "SMD": {
+    "synergy_ratio": 0.008079462025542695,
+    "mi_per_group": {
+      "Compute": 0.2810869207553903,
+      "Memory": 0.2824643645064724,
+      "Network": 0.27708692075539276
+    },
+    "pairwise_pids": [
+      {
+        "pair": "Compute\u00d7Memory",
+        "redundancy": 0.28108692075539654,
+        "unique_i": 0.0,
+        "unique_j": 0.0013774437510758464,
+        "synergy": 0.0018048202372182298
+      },
+      {
+        "pair": "Compute\u00d7Network",
+        "redundancy": 0.2770869207553971,
+        "unique_i": 0.003999999999993231,
+        "unique_j": 0.0,
+        "synergy": 0.0031822639883002934
+      },
+      {
+        "pair": "Memory\u00d7Network",
+        "redundancy": 0.2770869207553971,
+        "unique_i": 0.005377443751075295,
+        "unique_j": 0.0,
+        "synergy": 0.0018048202372182298
+      }
+    ],
+    "full_auc_mean": 0.9852063584513232,
+    "full_auc_std": 0.00693975112652018,
+    "full_mcc_mean": 0.8929934159252391,
+    "ablation_auc_mean": 0.9841131269501651,
+    "ablation_delta_auc": 0.0010932315011581428,
+    "ablation_p_value": 0.5668341739792258,
+    "baselines": {
+      "Naive Bayes": {
+        "auc_mean": 0.9854281258821279,
+        "auc_std": 0.008913020627462916
+      },
+      "Logistic Reg.": {
+        "auc_mean": 0.9879548842539119,
+        "auc_std": 0.004227179004400345
+      },
+      "Random Forest": {
+        "auc_mean": 0.9910004483183006,
+        "auc_std": 0.008784047917855422
+      },
+      "XGBoost (GB)": {
+        "auc_mean": 0.9909451560367442,
+        "auc_std": 0.008252812204217188
+      }
+    }
+  }
+}

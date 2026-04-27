@@ -1,0 +1,27 @@
+# PID Architecture Selection Diagnostic
+# Dependencies for the full experimental pipeline
+
+# Core scientific stack
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.3.0
+
+# Imbalanced learning
+imbalanced-learn>=0.11.0
+
+# Information theory (optional, for Ibroja PID estimator)
+# dit>=1.5.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Tables
+tabulate>=0.9.0
+
+# XGBoost baseline (uses sklearn GradientBoosting as fallback)
+# xgboost>=1.7.0
+
+# Testing
+pytest>=7.0.0
